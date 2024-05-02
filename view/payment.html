@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <title>Payment Gateway</title>
+</head>
+
+<body>
+
+    <!-----------------------------------NAVBAR---------------------------------->
+    <nav>
+        <div class="nav-left">
+          <a style="padding: 0px;" href="./index.html"><img id="logo" src="./images/Ecom_logo.png" alt="ProjectLogo"></a>
+          <div class="search-bar">
+            <!-- <input type="text" placeholder="What is in your mind today?"> -->
+            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+          </div>
+        </div>
+        <div class="nav-right">
+            <a id="carticon" href="#"><i class="fa fa-shopping-cart"></i></a>
+            <a href="#"><i class="fa fa-question-circle"></i></a>
+            <a href="#"><i class="fa fa-heart"></i></a>
+            <a id="usericon" href="#"><i class="fa fa-user"></i></a>
+            <a href="./signup.html" id="loginlink" class="toggle" style="font-size: 15px; color: black; text-decoration: underline;"><p id="username" style="display: inline;">Login / SignUp</p></a>
+          </div>
+    </nav>
+
+  <!-----------------------------------MEGA MENU---------------------------------->
+  <div class="navbar">
+
+</div><br>
+
+<!-----------------------------------------MAIN----------------------------------->
+<h1 id="h1234" style="text-align: center;font-family: 'Courgette', cursive; margin-top: 5%;"><u>Payment Option</u></h1>
+
+    <div id="paymentmode">
+        
+        <input type="radio" value="COD" id="cod" unchecked><b style="font-size: 20px;">Cash On Delivery</b>
+        <input type="radio" value="CP" id="cp" unchecked><b style="font-size: 20px;">Card Payment</b>
+        <h2 style="text-align: center; color: rgb(0, 0, 0);">Total Amount to pay:- <span id="totalAmount" style="color: green; font-size: 30px;">1999</span></h2>
+        <img style="width: 98%; margin-left: 10px;" src="https://cdn.myshoptet.com/usr/www.led-grower.eu/user/documents/upload/img/logo-platebni-karty.png" alt="payment">
+        <form>
+            
+            <input type="text" placeholder="Name on Card" id="name" required />
+            <input type="number" pattern="\d{12}" placeholder="Card Number" id="cardNo" required />
+            <input type="number" pattern="\d{12}" placeholder="CVV" id="cardCvv" required />
+            <button id="submit">Confirm</button>
+            <!-- <input type="number" placeholder="OTP" id="otp"/> -->
+            <!-- <button id="orderplaced">PLACE ORDER</button> -->
+        </form>
+
+    </div><br><hr>
+
+
+<!------------------------------------FOOTER--------------------------------->
+
+<div id="footer">
+  <div>
+    <h4>About Us</h4>
+    <a href="">History</a>
+    <a href="">Band of Trust</a>
+    <a href="">In the News</a>
+    <a href="">Blog</a>
+  </div>
+  <div>
+    <h4>Help</h4>
+    <a href="">Payments</a>
+    <a href="">Shipping</a>
+    <a href="">Cancellation & Returns</a>
+    <a href="">FAQ</a>
+  </div>
+  <div>
+    <h4>Merchant Central</h4>
+    <a href="">Merchant Panel</a>
+    <a href="">How to Sell</a>
+    <a href="">Commission Structure</a>
+    <a href="">Fullfillment Policy</a>
+  </div>
+  <div>
+    <h4>Contact Us</h4>
+    <a href="">Merchant Support</a>
+    <a href="">Bulk Orders</a>
+    <a href="">Press</a>
+  </div>
+  <div>
+    <h4>Press</h4>
+    <a href="">In the News</a>
+  </div>
+</div>
+  
+  <div id="social">
+    <div>
+      <h4 style="margin-left:10%;">Keep In Touch</h4>
+      <a href=><i style="margin-left: 0;" class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href=><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href=><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+      <a href=><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+      <a href=><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href=><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+    </div>
+    <div>
+      <h4 style="margin-left:30%;">100% Secure and Trusted Payment</h4>
+      <img src="./images/payment.png" alt="">
+    </div>
+  </div>
+  
+  <div id="lastline">
+    <p>Terms of Use | Privacy Policy | Security Bug Report | States Privacy Right | Do Not sell or Share My Personal Information | 
+      Transperancy in Supply Chains | Targeted Ad Preferences | Limit the Use of My Sensitive Personal Information | Wall of Fame</p>
+    <p style="font-weight:bold">Copyright © 2011-2023 Clues Network Pvt. Ltd.</p>
+  </div>
+  
+  
+  
+  
+  
+      <script src="./scripts/payment.js"></script>
+  </body>
+  </html>
